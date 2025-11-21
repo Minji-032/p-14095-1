@@ -1,9 +1,7 @@
-package com.mysite.sbb;
+package com.mysite.sbb.question;
 
 import com.mysite.sbb.answer.Answer;
 import com.mysite.sbb.answer.AnswerRepository;
-import com.mysite.sbb.question.Question;
-import com.mysite.sbb.question.QuestionRepository;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,13 +13,11 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
 
+@ActiveProfiles("test")
 @SpringBootTest
 @Transactional
-class SbbApplicationTest {
-
+public class QuestionRepositoryTest {
     @Autowired
     private QuestionRepository questionRepository;
 

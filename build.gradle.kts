@@ -1,3 +1,4 @@
+import org.gradle.kotlin.dsl.implementation
 import org.gradle.kotlin.dsl.runtimeOnly
 import org.gradle.kotlin.dsl.testImplementation
 import org.gradle.kotlin.dsl.testRuntimeOnly
@@ -41,6 +42,9 @@ dependencies {
     implementation("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
     testImplementation ("org.junit.jupiter:junit-jupiter")
     implementation ("org.springframework.boot:spring-boot-starter-validation")
+    // 스프링 시큐리티
+    implementation ("org.springframework.boot:spring-boot-starter-security")
+    implementation ("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
 }
 
 tasks.withType<Test> {

@@ -45,6 +45,8 @@ dependencies {
     // 스프링 시큐리티
     implementation ("org.springframework.boot:spring-boot-starter-security")
     implementation ("org.thymeleaf.extras:thymeleaf-extras-springsecurity6")
+    //마크다운
+    implementation("org.commonmark:commonmark:0.27.0")
 }
 
 tasks.withType<Test> {
